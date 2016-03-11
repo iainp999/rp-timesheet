@@ -29,6 +29,7 @@ for ($d = 0; $d < 5; $d++) {
 
   $excel->getActiveSheet()->setCellValue("B{$row}", $day);
   $excel->getActiveSheet()->setCellValue("C{$row}", $date);
+  $row++;
   $excel->getActiveSheet()->setCellValue("D{$row}", $activity);
   $excel->getActiveSheet()->setCellValue("I{$row}", "1");
 }
